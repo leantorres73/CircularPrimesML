@@ -13,8 +13,6 @@ public class Main
 		List<Integer> circularPrimes = new ArrayList<Integer>();
 		primeList = Collections.synchronizedList(new ArrayList<Integer>());
 		isComposite = new boolean[Configs.MAX + 1];
-		long initialTime = System.currentTimeMillis();
-
 		// genera primos debajo de 1.000.000
 		PrimeHelper.generatePrimes();
 		//2 y 5 serán eliminados posteriormente por eso los agrego.
